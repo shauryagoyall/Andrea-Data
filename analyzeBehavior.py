@@ -37,19 +37,19 @@ accuracy_JC240 = (correctTrials_JC240/numTrials_JC240.values)*100 # session accu
 accuracy_JC241 = (correctTrials_JC241/numTrials_JC241.values)*100
 
 #%%
-# Plot both animals
-JC240_plot = plt.plot(sessionID_JC240, accuracy_JC240[0,:], 'cornflowerblue', label="JC240")
-JC241_plot = plt.plot(sessionID_JC241, accuracy_JC241[0,:], 'r', label="JC241")
-plt.axvline(9, color='cornflowerblue', linestyle=":", linewidth="1.3")
-plt.axvline(13, color='red', linestyle=":", linewidth="1.3")
-plt.xticks(np.arange(0, numSessions_JC240+1, step=1))
-plt.xlabel('Session number')
-plt.ylabel('Accuracy (%)')
-plt.title('Performance JC240 and JC241')
-plt.legend()
-plt.axis([1,16,0,100])
-plt.show()
-# plt.savefig("Performance-schema.png", dpi=500)
+# # Plot both animals
+# JC240_plot = plt.plot(sessionID_JC240, accuracy_JC240[0,:], 'cornflowerblue', label="JC240")
+# JC241_plot = plt.plot(sessionID_JC241, accuracy_JC241[0,:], 'r', label="JC241")
+# plt.axvline(9, color='cornflowerblue', linestyle=":", linewidth="1.3")
+# plt.axvline(13, color='red', linestyle=":", linewidth="1.3")
+# plt.xticks(np.arange(0, numSessions_JC240+1, step=1))
+# plt.xlabel('Session number')
+# plt.ylabel('Accuracy (%)')
+# plt.title('Performance JC240 and JC241')
+# plt.legend()
+# plt.axis([1,16,0,100])
+# plt.show()
+# # plt.savefig("Performance-schema.png", dpi=500)
 
 #%%
 # Plot JC240
@@ -77,6 +77,61 @@ plt.legend()
 plt.axis([1,15,0,100])
 plt.show()
 # plt.savefig("Performance-JC241.png", dpi=500)
+
+#%%
+# calculate accuracy for each flavor separately, by session
+# formula: correct trials with flavor / total trials with flavor
+# step 1: calculate total trials with flavor per session
+# step 2: calculate correct trials with flavor per session
+
+trialsBySession = JC240_data.groupby("Session_ID")
+flavors_JC240 = trialsBySession.groupby("Flavor").size() # returns the number of trials per session, grouped by flavor
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
