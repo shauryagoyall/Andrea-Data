@@ -1,6 +1,6 @@
 # mPFC-analysis
 
-## Overview of scrips
+## Overview of scripts
 **8-arm-maze-performance.ipynb**: created before my qual to represent the expected learning curve (back when I expected each daily session to have 6 trials)
 
 **analyzeBehavior.ipynb**: plotted only JC240 and JC241; very simple figure
