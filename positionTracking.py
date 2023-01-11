@@ -1,7 +1,5 @@
 import numpy as np
-
-# f = open('JC274-20220312.whl', 'r')
-# pos = f.readlines() #separate into lines
+import matplotlib.pyplot as plt
 
 f = np.loadtxt('JC274-20220312.whl')
 x1 = f[:,0] # primary LED
@@ -13,5 +11,8 @@ valid = f[:,5] # binary that indicates if record is valid or not
 
 print(timestamps)
 
-# f.close()
+###
+
+plt.scatter(x1, y1, alpha=0.5)
+plt.show()
 
