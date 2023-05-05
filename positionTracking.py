@@ -27,7 +27,7 @@ mpl.use('TkAgg')
 # plt.ion()
 
 
-basename = 'JC274-20220314'
+basename = 'JC283-20220920'
 timenow = datetime.datetime.today().strftime("%Y%m%d-%H%M%S")
 
 pos = pd.read_csv(basename+'.whl', sep=" ",
