@@ -1,19 +1,8 @@
 # mPFC-analysis
 
 ## Overview of scripts
-**8-arm-maze-performance.ipynb**: created before my qual to represent the expected learning curve (back when I expected each daily session to have 6 trials)
+**analyzeBehavior.ipynb**: started writing in 2020 to analyze behavioral data for the cue-reward association task. Primary plots consist of: trial accuracy by training day, arm selection over time, and trial accuracy by cue type.
 
-**analyzeBehavior.ipynb**: plotted only JC240 and JC241; very simple figure
+**accuracySimple.ipynb**: made in 2022 as a simpler version of the performance plot from analyzeBehavior. Instead of using the raw trial outcomes, it uses the calculated percentages which are in a csv. As I improve analyzeBehavior it should become obsolete.
 
-**analyzeBehavior-v2.ipynb**: made while I was taking the datavis course; more primed for aesthetics since I was trying to extrapolate what the final learning curve 
-would look like for multiple animals, so I plotted the SEM instead of individual lines for each animal. Also plotted the arm choice.
-
-**analyzeBehavior-v3.ipynb**: fixed some aesthetics and cosmetic aspects specifically for a datavis assignment
-
-**analyzeBehavior-202104-progress-review.ipynb**: made for the October 2020 progress review; plots all the animals I did, even the unusable ones
-
-**analyzeBehavior-v4-20210706.ipynb**: decided to add the date to the filename to keep track; don't think I'll do this in the future
-
-**analyzeBehavior-v5.ipynb**: created on 7/20/2021 to work with only animals I'll use (at least for behavior). Updated with accuracy by flavor, didn't end up using that code.
-
-**analyzeBehavior-v6.ipynb**: created 9/2021 for DOC fellowship, accuracy by flavor works and is plotted for each animal and in a combined plot with two animals
+**positionTracking.ipynb**: made in January 2023 to analyze tracking data.
