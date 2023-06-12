@@ -1,4 +1,3 @@
 # gitignore
 \.idea
-'Accuracy and arm choice 2021-04-08 16:30:26.jpg'
-'Accuracy and arm choice 2021-04-08 16:08.jpg'
+.ipynb_checkpoints/
